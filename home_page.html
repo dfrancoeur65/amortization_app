@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amortization Application</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img height= 200 width = 300 src="http://www.etonline.com/sites/default/files/images/2016-10/1280_ben_affleck_the_accountant.jpg" alt="Accounting Application">
+    <figcaption>
+      <a href="https://en.wikipedia.org/wiki/The_Accountant_(2016_film)">The OG Accountant needs a deferred revenue application</a>
+    </figcaption>
+
+    <nav>
+      <div style="background-color:#82E0AA;color:#85929E ;padding:40px;">
+        <h1><a href = "#Instruction">Instructions</a></h1>
+      <p>Summary: This application will help you amortize a revenue event over a period of time. It will automatically create the Journal Entries for import into quickbooks!
+        This means you can eliminate the monotonous task of creating journal entries for every item in quickbooks and just enter in the
+        the full value
+      </p>
+      <ol>
+        <li>Select the date of the accounting event</li>
+        <li>Decide what scenario this accounting event falls into:</li>
+        <ul>
+          <li>No revenue is recognized on the accounting event date, all revenue is deferred</li>
+          <li>A portion of the revenue is recognized on the date of the accounting event, the remainder is deferred</li>
+        </ul>
+        <li><a name="Directions">Directions</a></li>
+      </ol>
+    </div>
+    </nav>
+  </header>
+
+
+  <section>
+    <h1>Inputs</h1>
+ <!-- Have a form here to collect inputs -->
+
+   <label for="name">Name</label>
+   <input id="name" type="text" name="name">
+<br>
+<br>
+   <label for="event_date">Event Date</label>
+   <input id="event_date" type="date" name="date"></input>
+<br>
+<br>
+   <label for="months">Months</label>
+   <input id="months" type="integer" name="months"></input>
+<br>
+
+<br>
+   <label for="account_one">Account 1:</label>
+
+   <select id="account_one" name="account_one">
+
+     <option value="Select Account" disabled="true" selected="true">Select Account</option>
+
+     <option value="Bank Account 1">Bank Account 1</option>
+
+     <option value="Bank Account 2">Bank Account 2</option>
+
+     <option value="Bank Account 3">Bank Account 3</option>
+
+     <option value="Accounts Receivable">Accounts Receivable</option>
+
+   </select>
+
+   <label for="debit_one">Debit:
+     <input  id= "debit_one" type="integer" name="debit_one" value="0"></input>
+   </label>
+
+   <label for="credit_one">Credit:
+     <input  id= "credit_one" type="integer" name="credit_one" value="0"></input>
+   </label>
+
+   <br>
+   <br>
+
+   <label for="account_three">Account 2:</label>
+
+   <select id="account_three" name="account_three">
+
+     <option value="Select Account" disabled="true" selected="true">Select Account</option>
+
+     <option value="Deferred Revenue">Deferred Revenue</option>
+
+   </select>
+
+   <label for="debit_three">Debit:
+     <input  id= "debit_three" type="integer" name="debit_three" value="0"></input>
+   </label>
+
+   <label for="credit_three">Credit:
+     <input  id= "credit_three" type="integer" name="credit_three" value="0"></input>
+   </label>
+
+   <br>
+   <br>
+
+   <label for="account_four">Account 3:</label>
+
+   <select id="account_four" name="account_four">
+
+     <option value="Select Account" disabled="true" selected="true">Select Account</option>
+
+     <option value="Realized Revenue">Realized Revenue</option>
+
+   </select>
+
+   <label for="debit_four">Debit:
+     <input  id= "debit_four" type="integer" name="debit_four" value="0"></input>
+   </label>
+
+   <label for="credit_four">Credit:
+     <input  id= "credit_four" type="integer" name="credit_four" value="0"></input>
+   </label>
+
+
+<br>
+<br>
+   <input id="submit" type="submit" value="submit">
+
+</section>
+
+<section>
+<h1>Outputs</h1>
+<div id="journal_entry_one">
+<h2>Journal Entry #1</h2>
+<h3>Date:<a class = "posting_date"></a></h3>
+<br>
+<a>Account:</a> <a class = "account_one"></a><a class = "debit_one"></a><a class = "credit_one"></a>
+<br>
+<a>Account:</a> <a class = "account_two"></a><a class = "debit_two"></a><a class = "credit_two"></a>
+<br>
+<a>Account:</a><a class = "account_three"></a><a class = "debit_three"></a><a class = "credit_three"></a>
+
+</div>
+<br>
+<br>
+<br>
+<div id="post_event_journal_entries">
+
+</div>
+
+</section>
+
+
+
+
+  <footer>
+    <p>Smooth Accounting</p>
+  </footer>
+</body>
+</html>
+
+
+
+<!-- <h2>Journal Entry #2</h2>
+<h3>Date:<a class = "posting_date"></a></h3>
+<br>
+<a>Account:</a> <a class = "account_one"></a><a class = "debit_one"></a><a class = "credit_one"></a>
+<br>
+<a>Account:</a> <a class = "account_two"></a><a class = "debit_two"></a><a class = "credit_two"></a>
+<br>
+<a>Account:</a> <a class = "account_three"></a><a class = "debit_three"></a><a class = "credit_three"></a> -->
