@@ -1,27 +1,25 @@
 # amortization_app
 Accounting application to automate journal entries.
 
-Enter in the following:
-
-Name of the event, just put "Contract A"
-
-
-
 Example:
 
-Without the application:
+# Without the application:
 You are creating a journal entry for a deferred revenue contract:
+
 You receive $120 on 12/1/2017 into a bank account.
+
 The $120 is for a 12-month spotify membership.
+
 on 12/1/2017 you make the following entry:
+
 Bank Account 1 Dr. $120
 Deferred Revenue Cr. $110
-12 month contract. Cr. $10
+Realized Revenue Cr. $10
 
-and every month you would need to create a journal entry to realize 1/12 of the revenue...
+THEN every month for the next 12 months you would need to create a journal entry to realize 1/12 of the revenue...
 
 
-With the Amortization Application:
+# With the Amortization Application:
 
 Name: "Contract A"    ###working on way to make templates
 Date: 12/1/2017
