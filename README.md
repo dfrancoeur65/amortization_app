@@ -23,7 +23,9 @@ THEN every month for the next 12 months you would need to create a journal entry
 
 
 Name: "Contract A"   (V.2 way to make templates)
+
 Date: 12/1/2017
+
 Months: 12
 
 Account 1: "Bank Account 1"  Enter in a Debit Amount : "120"
