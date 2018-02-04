@@ -31,9 +31,6 @@ Account 2: "Deferred Revenue" Enter in a credit amount: "110"
 
 Account 2: "Realized Revenue" Enter in a credit amount: "10"
 
-PRess Submit....
+Press Submit....
 
-All your journal entries are populated and ready for import into QB!
-
-Need to use a library for the dates on V2...can't seem to add a month to a date easily so you'll see some weird stuff on the entries
-then press submit!
+Awesome! All your journal entries are populated and ready for import into QB!
