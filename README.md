@@ -21,6 +21,7 @@ THEN every month for the next 12 months you would need to create a journal entry
 
 # With the Amortization Application:
 
+
 Name: "Contract A"    ###working on way to make templates
 Date: 12/1/2017
 Months: 12
